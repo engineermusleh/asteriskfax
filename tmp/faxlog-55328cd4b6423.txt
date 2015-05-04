@@ -1,0 +1,2 @@
+2015-04-18 12:56:57 Fax started: Faxid 55328cd4b6423 Dest 6475031024
+2015-04-18 12:57:24 Fax successful: Dest 6475031024 No of Pages 1

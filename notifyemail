@@ -1,0 +1,20 @@
+#! /bin/sh
+
+# This script is used to send email notification for the activation of membership
+
+#Usage: notifyemail <recipient_email> <username>
+
+
+/usr/bin/mime-construct --header 'Sender: faxserver-donotreply@maverix.ipfinity.com' \
+                        --header 'From: faxserver-donotreply@ipfinity.com' \
+                        --to $1 \
+                        --subject "IPFINITY WebFax Account Activation" \
+			--body "Dear $2
+
+Thank you for registering to IPFINITY WebFax. This email is being sent as confirmation of your registration. 
+You can now send faxes at any time, by logging in at http://antix.ipfinity.com/WebFax-qaq3ZMvoQR/index.html.
+
+Kind Regards,
+IPFINITY
+The CloudVoice™ Company"
+
